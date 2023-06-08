@@ -16,7 +16,7 @@ public class CardDto {
     @NotNull
     @NotEmpty(message = "Card Number should not be empty!")
     @Size(min = 16, max = 16)
-    @Pattern(regexp = "^\\d{10}$", message = "16 digit card number format")
+    @Pattern(regexp = "^\\d{16}$", message = "16 digit card number format")
     private String cardNumber;
 
     @NotNull

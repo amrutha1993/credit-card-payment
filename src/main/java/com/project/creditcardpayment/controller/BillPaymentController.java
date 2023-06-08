@@ -17,10 +17,6 @@ public class BillPaymentController {
     @Autowired
     BillService billService;
 
-    @Autowired
-    BillRepository billRepository;
-
-
     @GetMapping("/view")
     public ResponseEntity<?> viewGeneratedBills(@RequestParam String cardNumber) {
         try {

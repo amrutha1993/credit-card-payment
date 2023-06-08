@@ -18,9 +18,6 @@ import org.springframework.web.bind.annotation.*;
 public class CreditCardController {
 
     @Autowired
-    private CreditCardRepository creditCardRepository;
-
-    @Autowired
     private CreditCardService creditCardService;
 
     @PostMapping("/add")
